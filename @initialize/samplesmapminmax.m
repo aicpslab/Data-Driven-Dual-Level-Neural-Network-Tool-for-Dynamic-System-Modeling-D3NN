@@ -1,0 +1,19 @@
+function  [xsn,tn,input_ps,output_ps] = samplesmapminmax(obj,xs,t)
+    SystemStateDimension=obj.systemstatedimension;
+    [xsn, ps_input] = mapminmax(xs',-1,1);
+    ps_output.name = ps_input.name;
+    ps_output.xrows=SystemStateDimension;
+    ps_output.yrows=SystemStateDimension;
+    ps_output.xmax=ps_input.xmax(1:SystemStateDimension,:);
+    ps_output.xmin=ps_input.xmin(1:SystemStateDimension,:);
+    ps_output.xrange=ps_input.xrange(1:SystemStateDimension,:);
+    ps_output.ymax=1;
+    ps_output.ymin=-1;
+    ps_output.yrange=2;
+    ps_output.gain=ps_input.gain(1:SystemStateDimension);
+    ps_output.xoffset=ps_input.xoffset(1:SystemStateDimension);
+    ps_output.no_change=0;
+    [tn] = mapminmax('apply',t',ps_output);
+    input_ps = ps_input;
+    output_ps = ps_output;
+end
