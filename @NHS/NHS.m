@@ -47,12 +47,12 @@ methods
     end
   SamplesnPartitionsPlot(obj,xsn)
   PredictionPlot(obj,xsn,tn)
-    % [MSE]=RunSimulationNHS()
-    % 
-    % [MSE]=RunSimulationELM()
-    % 
+  InitialState=GenerateInitialState(obj)
+  [MSE,NRMSE,NRMSEvector,SimulationTraj]=Simulation_Ref(obj,Ref_Traj)
+  [RandomInput,SimulationTraj]=Runsimulation(obj)
   PoltDataPartition(obj)
-
+  
+  obj=NHSLearning(xsn,tn,Ini)
 
 
 end

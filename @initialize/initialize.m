@@ -38,8 +38,11 @@ classdef initialize
         verificationu_input={};
         abstractionnum={};
         abstractionduration={};
+        abstractiontol={};
+        abstractionentropy={};
+        
         % Decrease Self Loop Num
-        selfloopNum={};
+        selfloopnum={};
         mu={};
         coeff={};
         explained={};
@@ -52,7 +55,7 @@ classdef initialize
     
     methods
         %% class constructor
-        function obj = initialize(SystemOrder,Maximum_Dimension,SystemStateDimension,tol,maximum_entropy,NeuronNum_switch,NeuronNum_single,TF,timetic,e,VerificationNum,VerificationDuration,TrainingStateDimension, InitialBound,VerificationU_input,AbstractionNum,AbstractionDuration,SelfLoopNum,Mode,idx,name)
+        function obj = initialize(SystemOrder,Maximum_Dimension,SystemStateDimension,tol,maximum_entropy,NeuronNum_switch,NeuronNum_single,TF,timetic,e,VerificationNum,VerificationDuration,TrainingStateDimension, InitialBound,VerificationU_input,AbstractionNum,AbstractionDuration,AbstractionTol,AbstractionEntropy,SelfLoopNum,Mode,idx,name)
             obj.systemorder=SystemOrder;
             obj.maximum_dimension=Maximum_Dimension;
             obj.systemstatedimension=SystemStateDimension;
@@ -70,8 +73,10 @@ classdef initialize
             obj.verificationu_input=VerificationU_input;
             obj.abstractionnum=AbstractionNum;
             obj.abstractionduration=AbstractionDuration;
+            obj.abstractiontol=AbstractionTol;
+            obj.abstractionentropy=AbstractionEntropy;
             % Decrease Self Loop Num
-            obj.selfloopNum=SelfLoopNum;
+            obj.selfloopnum=SelfLoopNum;
             obj.mode=Mode;
             obj.idx=idx;
             obj.name=name;

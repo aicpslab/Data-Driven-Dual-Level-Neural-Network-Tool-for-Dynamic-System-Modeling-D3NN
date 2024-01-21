@@ -45,7 +45,13 @@ classdef ELM
         
         % generate outputs for gridding point in an input interval
         output=ELMreachabilitynnv(InputBound,obj)
+        %
+         
         
+        flag=ifNextIntersect(obj,input,interval)
+        
+
+        %
         output=ELMpredict(ELM,Input)
         
         % ELM predict
