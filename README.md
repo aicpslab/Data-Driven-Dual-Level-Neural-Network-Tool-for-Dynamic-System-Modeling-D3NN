@@ -46,19 +46,19 @@ After installing these toolboxes, add them to your MATLAB path. This can be done
 Here's how to get started with D3NN in MATLAB. User can
 
 - **Open ...\The Neural Network Learning Tool for Dual-Level Dynamic System Modeling (D3NN)\Runtest4D3NN.mlx to run an example of the encapsulated Dual-level Data-driven modeling using class methods.**
-- **Open ...\The Neural Network Learning Tool for Dual-Level Dynamic System Modeling (D3NN)\Runtest.mlx to run detail NHS modeling and transition system abstraction process.**
+- **Open ...\The Neural Network Learning Tool for Dual-Level Dynamic System Modeling (D3NN)\Runtest.mlx to run detailed NHS modeling and transition system abstraction process.**
 
 ## Process
 
 ### Initialization and Load Data
 
-D3NN allows higher order modeling of the given data set by setting **SystemOrder>1**.
+D3NN allows higher-order modeling of the given data set by setting **SystemOrder>1**.
 
-**Maximum_Dimension** determinds PCA mapping space dimension.
+**Maximum_Dimension** determines PCA mapping space dimension.
 
 **SystemStateDimension** is the state dimension in the dataset.
 
-**tol** sets the minimum bound length tolerance for Maximum Entropy Partitioning method in NHS modeling.
+**tol** sets the minimum bound length tolerance for the Maximum Entropy Partitioning method in NHS modeling.
 
 **maximum_entropy** sets the tolerance for Maximum Entropy ME partitioning in NHS modeling.
 
@@ -66,25 +66,25 @@ D3NN allows higher order modeling of the given data set by setting **SystemOrder
 
 **TF** is the transfer function of ELM in NHS.
 
-**timetic** sets the staying steps in each cell when transfer into UPPAAL model.
+**timetic** sets the staying steps in each cell when transferred into the UPPAAL model.
 
 **e** sets the tolerance when merging the redundant partitions.
 
-**VerificationNum** sets the verfication number of the random generated trajectories when show the approximation ability of NHS.
+**VerificationNum** sets the verification number of the randomly generated trajectories when showing the approximation ability of NHS.
 
-**VerificationDuration** sets the verfication duration of the random generated trajectories when show the approximation ability of NHS.
+**VerificationDuration** sets the verification duration of the randomly generated trajectories when showing the approximation ability of NHS.
 
-**InitialBound** sets the randomly generated intial state bound when running simulations to show the approximation ability of NHS.
+**InitialBound** sets the randomly generated initial state bound when running simulations to show the approximation ability of NHS.
 
 **VerificationU_input** sets the randomly generated external input bound when running simulations to show the approximation ability of NHS.
 
-**AbstractionNum** sets the verfication number of the random generated trajectories in NTS abstraction.
+**AbstractionNum** sets the verification number of the randomly generated trajectories in NTS abstraction.
 
-**AbstractionDuration** sets the verfication duration of the random generated trajectories in NTS abstraction.
+**AbstractionDuration** sets the verification duration of the randomly generated trajectories in NTS abstraction.
 
-**AbstractionTol** sets the minimum bound length tolerance for Maximum Entropy Partitioning method in high-level transition system abstraction.  
+**AbstractionTol** sets the minimum bound length tolerance for the Maximum Entropy Partitioning method in high-level transition system abstraction.  
 
-**AbstractionEntropy** stes tolerance for Maximum Entropy ME partitioning in transition system abstraction.
+**AbstractionEntropy** sets the tolerance for Maximum Entropy ME partitioning in transition system abstraction.
 
 **SelfLoopNum** sets the reduced selfloop number in transition system abstraction.
 
@@ -105,5 +105,27 @@ D3NN allows higher order modeling of the given data set by setting **SystemOrder
 
 ![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/SimulationMode.png)
 
+### Transition System Abstraction
+
+**NTS(NHS1)** Generated a transition system abstraction based on NHS1.
+
+**TransitionCompute(NTS1)** Compute the transition relationship of the transition system NTS1 and generated a transition graph.
+
+![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/TransitionGraph.png)
+
+**ReduceSelfloop(NTS1)** Reduced the self-loop number under the  for all trajectories limited staying = no self-loop assumption and returned a reduced-self-loop transition map.
+
+![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/ReducedTransitionGraph.png)
+
+**CTLFormulaeInput(NTS1)** User interface of generating the specifications including initial cell and CTL formulae, based on the transition map.
+
+![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/Interface.png)
+
+**GenerateSystem(NTS1)** Generated a UPPAAL readable file with a user-defined name.
+
+### UPPAAL & Verification
+Open the user-saved file with UPPAAL
+![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/UPPAAL%20Model.png)
+![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/UPPAAL%20Verification.png)
 # Contact
 For any questions or feedback, please reach out to us at yangyejiang0316@163.com.
