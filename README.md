@@ -42,7 +42,28 @@ YALMIP is a high-level modeling language for advanced modeling and solution of o
 
 After installing these toolboxes, add them to your MATLAB path. This can be done by navigating to the toolbox directory in MATLAB and using the `addpath` command.
 
-# Features
+# Usage
+Here's how to get started with D3NN in MATLAB. User can
+
+- **Open ...\The Neural Network Learning Tool for Dual-Level Dynamic System Modeling (D3NN)\Runtest4D3NN.mlx to run an example of the encapsulated Dual-level Data-driven modeling using class methods.**
+- **Open ...\The Neural Network Learning Tool for Dual-Level Dynamic System Modeling (D3NN)\Runtest.mlx to run detail NHS modeling and transition system abstraction process.**
+
+## Process
+-**Initialization and Load Data.**
+
+D3NN allows higher order modeling of the given data set by setting **SystemOrder>1**.
+**Maximum_Dimension** determinds PCA mapping space dimension.
+**SystemStateDimension** is the state dimension in the dataset.
+**tol** sets the minimum bound length tolerance for Maximum Entropy Partitioning method in NHS modeling.
+**maximum_entropy** sets the tolerance for Maximum Entropy ME partitioning in NHS modeling.
+**NeuronNum_switch** sets the neuron number in the hidden layer of ELM in NHS.
+**TF** is the transfer function of ELM in NHS.
+**timetic** sets the staying steps in each cell when transfer into UPPAAL model.
+**e** sets the tolerance when merging the redundant partitions.
+**VerificationNum** sets the verfication number of the random generated trajectories when show the approximation ability of NHS.
+**VerificationNum** sets the verfication duration of the random generated trajectories when show the approximation ability of NHS.
+
+-**Neural Hybrid System Learning.**
 
 # Contact
-For any questions or feedback, please reach out to us at [yangyejiang0316@163.com].
+For any questions or feedback, please reach out to us at yangyejiang0316@163.com.
