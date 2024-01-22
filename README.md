@@ -50,7 +50,7 @@ Here's how to get started with D3NN in MATLAB. User can
 
 ## Process
 
-### Initialization and Load Data
+### 1. Initialization and Load Data
 
 D3NN allows higher-order modeling of the given data set by setting **SystemOrder>1**.
 
@@ -88,7 +88,7 @@ D3NN allows higher-order modeling of the given data set by setting **SystemOrder
 
 **SelfLoopNum** sets the reduced selfloop number in transition system abstraction.
 
-### Neural Hybrid System Learning
+### 2. Neural Hybrid System Learning
 
 **NHS(xsn,tn,Ini):** Generate the NHS model with the normalized input and output set and the initialized coefficients.
 
@@ -105,7 +105,7 @@ D3NN allows higher-order modeling of the given data set by setting **SystemOrder
 
 ![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/SimulationMode.png)
 
-### Transition System Abstraction
+### 3. Transition System Abstraction
 
 **NTS(NHS1)** Generated a transition system abstraction based on NHS1.
 
@@ -123,7 +123,7 @@ D3NN allows higher-order modeling of the given data set by setting **SystemOrder
 
 **GenerateSystem(NTS1)** Generated a UPPAAL readable file with a user-defined name.
 
-### UPPAAL & Verification
+### 4. UPPAAL & Verification
 Open the user-saved file with UPPAAL
 ![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/UPPAAL%20Model.png)
 ![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/UPPAAL%20Verification.png)
