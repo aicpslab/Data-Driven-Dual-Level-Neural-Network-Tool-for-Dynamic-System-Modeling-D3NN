@@ -1,4 +1,4 @@
-# Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN
+# Data-Driven Dual-Level Neural Network Tool for Dynamic System Modeling (D3NN)
 
 # Introduction
 
