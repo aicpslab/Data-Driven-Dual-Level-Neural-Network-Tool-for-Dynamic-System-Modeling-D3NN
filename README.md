@@ -10,6 +10,7 @@ Data-Driven Dual Level Neural Network (D3NN) is a powerful MATLAB toolkit design
 - **Low-level Neural Hybrid System Modeling:** Low-level neural hybrid system modeling process allows multiple ELMs to be trained and verified. Compared with conventional NN learning, this structure promotes computationally efficiency while maintaining accuracy in dynamics learning.  
 - **High-level Transition System Abstraction:**  Based on the low-level neural hybrid system model, the high-level transition system abstraction allows fast and CTL language-based verification, which not only reveals the transitions inside the black-box model but also allows user-friendly language input verification. 
 
+
 ## Installation
 
 To install D3NN, follow these simple steps:
@@ -20,6 +21,26 @@ To install D3NN, follow these simple steps:
 - **Open MATLAB and navigate to the D3NN folder.**
 - **Right-click on the folder in MATLAB's "Current Folder" window.**
 - **Select "Add to Path" > "Selected Folders and Subfolders".**
+
+# Dependencies
+
+The Data-Driven Dual Level Neural Network Tool for Dynamic System Modeling (D3NN) relies on several external MATLAB toolboxes for full functionality. Please ensure that you have the following toolboxes installed and added to your MATLAB path:
+
+## GLPKMEX
+
+GLPKMEX is a MATLAB interface for the GNU Linear Programming Kit. This toolbox is essential for solving linear programming and mixed integer linear programming problems within D3NN.
+
+## NNV
+
+NNV stands for Neural Network Verification. This toolbox is used in D3NN for performing verification tasks on neural networks, ensuring the reliability and robustness of the models.
+
+## YALMIP
+
+YALMIP is a high-level modeling language for advanced modeling and solution of optimization problems. D3NN utilizes YALMIP for optimization tasks.
+
+## Adding Toolboxes to MATLAB Path
+
+After installing these toolboxes, add them to your MATLAB path. This can be done by navigating to the toolbox directory in MATLAB and using the `addpath` command.
 
 ## Features
 
