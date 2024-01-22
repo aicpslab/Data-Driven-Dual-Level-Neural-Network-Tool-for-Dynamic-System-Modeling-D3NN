@@ -1,17 +1,17 @@
 # Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN
 
-## Introduction
+# Introduction
 
 Data-Driven Dual Level Neural Network (D3NN) is a powerful MATLAB toolkit designed for dynamic system modeling using advanced neural network techniques. This tool integrates data-driven methodologies with a dual-level neural network structure including low-level neural hybrid systems and high-level transition system abstraction to provide accurate and efficient modeling capabilities for various dynamic systems. 
 
-## Features
+# Features
 
 - **Data-Driven Approach:** Utilizes data to model dynamic systems, ensuring accuracy and relevance.
 - **Low-level Neural Hybrid System Modeling:** Low-level neural hybrid system modeling process allows multiple ELMs to be trained and verified. Compared with conventional NN learning, this structure promotes computationally efficiency while maintaining accuracy in dynamics learning.  
 - **High-level Transition System Abstraction:**  Based on the low-level neural hybrid system model, the high-level transition system abstraction allows fast and CTL language-based verification, which not only reveals the transitions inside the black-box model but also allows user-friendly language input verification. 
 
 
-## Installation
+# Installation
 
 To install D3NN, follow these simple steps:
 
@@ -38,11 +38,11 @@ NNV stands for Neural Network Verification. This toolbox is used in D3NN for per
 
 YALMIP is a high-level modeling language for advanced modeling and solution of optimization problems. D3NN utilizes YALMIP for optimization tasks.
 
-## Adding Toolboxes to MATLAB Path
+# Adding Toolboxes to MATLAB Path
 
 After installing these toolboxes, add them to your MATLAB path. This can be done by navigating to the toolbox directory in MATLAB and using the `addpath` command.
 
-## Features
+# Features
 
-## Contact
+# Contact
 For any questions or feedback, please reach out to us at [yangyejiang0316@163.com].
