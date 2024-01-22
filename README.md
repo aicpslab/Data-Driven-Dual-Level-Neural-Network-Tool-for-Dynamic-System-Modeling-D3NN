@@ -49,7 +49,8 @@ Here's how to get started with D3NN in MATLAB. User can
 - **Open ...\The Neural Network Learning Tool for Dual-Level Dynamic System Modeling (D3NN)\Runtest.mlx to run detail NHS modeling and transition system abstraction process.**
 
 ## Process
--**Initialization and Load Data.**
+
+### Initialization and Load Data
 
 D3NN allows higher order modeling of the given data set by setting **SystemOrder>1**.
 
@@ -87,7 +88,7 @@ D3NN allows higher order modeling of the given data set by setting **SystemOrder
 
 **SelfLoopNum** sets the reduced selfloop number in transition system abstraction.
 
--**Neural Hybrid System Learning.**
+### Neural Hybrid System Learning
 
 **NHS(xsn,tn,Ini):** Generate NHS model with the normalized input and output set and the initialized coefficients.
 
