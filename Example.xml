@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<nta>
+  <declaration>// Place global declarations here.
+clock x;</declaration>
+  <template>
+    <name x="5" y="5">Template</name>
+    <location id="id0" x="223.1818" y="223.1818">
+      <name x="240.1818" y="198.1818">id0</name>
+      <label kind="invariant" x="224.1818" y="238.1818">x&lt;=3</label>
+    </location>
+    <location id="id1" x="223.1818" y="441.3636">
+      <name x="240.1818" y="416.3636">id1</name>
+      <label kind="invariant" x="224.1818" y="456.3636">x&lt;=3</label>
+    </location>
+    <location id="id2" x="223.1818" y="659.5455">
+      <name x="240.1818" y="634.5455">id2</name>
+      <label kind="invariant" x="224.1818" y="674.5455">x&lt;=3</label>
+    </location>
+    <location id="id3" x="223.1818" y="877.7273">
+      <name x="240.1818" y="852.7273">id3</name>
+      <label kind="invariant" x="224.1818" y="892.7273">x&lt;=3</label>
+    </location>
+    <location id="id4" x="441.3636" y="223.1818">
+      <name x="458.3636" y="198.1818">id4</name>
+      <label kind="invariant" x="442.3636" y="238.1818">x&lt;=3</label>
+    </location>
+    <location id="id5" x="441.3636" y="441.3636">
+      <name x="458.3636" y="416.3636">id5</name>
+      <label kind="invariant" x="442.3636" y="456.3636">x&lt;=3</label>
+    </location>
+    <location id="id6" x="441.3636" y="659.5455">
+      <name x="458.3636" y="634.5455">id6</name>
+      <label kind="invariant" x="442.3636" y="674.5455">x&lt;=3</label>
+    </location>
+    <location id="id7" x="441.3636" y="877.7273">
+      <name x="458.3636" y="852.7273">id7</name>
+      <label kind="invariant" x="442.3636" y="892.7273">x&lt;=3</label>
+    </location>
+    <location id="id8" x="659.5455" y="223.1818">
+      <name x="676.5455" y="198.1818">id8</name>
+      <label kind="invariant" x="660.5455" y="238.1818">x&lt;=3</label>
+    </location>
+    <location id="id9" x="659.5455" y="441.3636">
+      <name x="676.5455" y="416.3636">id9</name>
+      <label kind="invariant" x="660.5455" y="456.3636">x&lt;=3</label>
+    </location>
+    <location id="id10" x="659.5455" y="659.5455">
+      <name x="676.5455" y="634.5455">id10</name>
+      <label kind="invariant" x="660.5455" y="674.5455">x&lt;=3</label>
+    </location>
+    <init ref="id3"/>
+    <transition>
+      <source ref="id0"/>
+      <target ref="id2"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id0"/>
+      <target ref="id3"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id1"/>
+      <target ref="id2"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id1"/>
+      <target ref="id6"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id1"/>
+      <target ref="id7"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id2"/>
+      <target ref="id0"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id2"/>
+      <target ref="id3"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id2"/>
+      <target ref="id7"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id4"/>
+      <target ref="id6"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id5"/>
+      <target ref="id1"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id5"/>
+      <target ref="id6"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id5"/>
+      <target ref="id10"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id6"/>
+      <target ref="id1"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id6"/>
+      <target ref="id7"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id7"/>
+      <target ref="id3"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id8"/>
+      <target ref="id4"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id8"/>
+      <target ref="id6"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id8"/>
+      <target ref="id9"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id8"/>
+      <target ref="id10"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id9"/>
+      <target ref="id4"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id10"/>
+      <target ref="id1"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id10"/>
+      <target ref="id5"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+    <transition>
+      <source ref="id10"/>
+      <target ref="id6"/>
+      <label kind="assignment">x:=0</label>
+    </transition>
+  </template>
+  <system>// Place template instantiations here.
+P1 = Template();  
+// List one or more processes to be composed into a system.
+system P1;</system>
+  <queries>
+    <query>
+      <formula>E&lt;&gt;P1.id5</formula>
+    </query>
+  </queries>
+</nta>
