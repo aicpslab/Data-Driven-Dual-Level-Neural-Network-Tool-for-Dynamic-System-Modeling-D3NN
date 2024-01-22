@@ -102,6 +102,7 @@ D3NN allows higher order modeling of the given data set by setting **SystemOrder
 ![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/PredictionMode.png)
 
 **Runsimulation(NHS1)** Run NHS1 simulation with randomized initial state input and external input and return the randomly generated external input and trajectories.
+
 ![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/SimulationMode.png)
 
 # Contact
