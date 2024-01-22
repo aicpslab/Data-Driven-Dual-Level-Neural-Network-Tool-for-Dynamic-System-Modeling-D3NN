@@ -52,18 +52,46 @@ Here's how to get started with D3NN in MATLAB. User can
 -**Initialization and Load Data.**
 
 D3NN allows higher order modeling of the given data set by setting **SystemOrder>1**.
+
 **Maximum_Dimension** determinds PCA mapping space dimension.
+
 **SystemStateDimension** is the state dimension in the dataset.
+
 **tol** sets the minimum bound length tolerance for Maximum Entropy Partitioning method in NHS modeling.
+
 **maximum_entropy** sets the tolerance for Maximum Entropy ME partitioning in NHS modeling.
+
 **NeuronNum_switch** sets the neuron number in the hidden layer of ELM in NHS.
+
 **TF** is the transfer function of ELM in NHS.
+
 **timetic** sets the staying steps in each cell when transfer into UPPAAL model.
+
 **e** sets the tolerance when merging the redundant partitions.
+
 **VerificationNum** sets the verfication number of the random generated trajectories when show the approximation ability of NHS.
-**VerificationNum** sets the verfication duration of the random generated trajectories when show the approximation ability of NHS.
+
+**VerificationDuration** sets the verfication duration of the random generated trajectories when show the approximation ability of NHS.
+
+**InitialBound** sets the randomly generated intial state bound when running simulations to show the approximation ability of NHS.
+
+**VerificationU_input** sets the randomly generated external input bound when running simulations to show the approximation ability of NHS.
+
+**AbstractionNum** sets the verfication number of the random generated trajectories in NTS abstraction.
+
+**AbstractionDuration** sets the verfication duration of the random generated trajectories in NTS abstraction.
+
+**AbstractionTol** sets the minimum bound length tolerance for Maximum Entropy Partitioning method in high-level transition system abstraction.  
+
+**AbstractionEntropy** stes tolerance for Maximum Entropy ME partitioning in transition system abstraction.
+
+**SelfLoopNum** sets the reduced selfloop number in transition system abstraction.
 
 -**Neural Hybrid System Learning.**
+
+**NHS(xsn,tn,Ini):** Generate NHS model with the normalized input and output set and the initialized coefficients.
+
+
 
 # Contact
 For any questions or feedback, please reach out to us at yangyejiang0316@163.com.
