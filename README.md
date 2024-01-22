@@ -90,9 +90,16 @@ D3NN allows higher order modeling of the given data set by setting **SystemOrder
 
 ### Neural Hybrid System Learning
 
-**NHS(xsn,tn,Ini):** Generate NHS model with the normalized input and output set and the initialized coefficients.
+**NHS(xsn,tn,Ini):** Generate the NHS model with the normalized input and output set and the initialized coefficients.
 
+**SamplesnPartitionsPlot(NHS1,xsn):** Plot partitions and samples of NHS1 and mapminmaxed samples.
+![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/SamplesnPartitions.png)
 
+**PoltDataPartition(NHS1):** Plot merged partitions of NHS1.
+![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/MergedPartitions.png)
+
+**PredictionPlot(NHS1,xsn,tn)** Plot the prediction results using the mapminmaxed data set as the NHS input.
+![image](https://github.com/aicpslab/Data-Driven-Dual-Level-Neural-Network-Tool-for-Dynamic-System-Modeling-D3NN/blob/main/Example/PredictionMode.png)
 
 # Contact
 For any questions or feedback, please reach out to us at yangyejiang0316@163.com.
