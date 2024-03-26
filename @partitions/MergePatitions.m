@@ -56,14 +56,21 @@ while m1 <  lengthSegment
 end
 
 clc
+counter=1;
 for i = 1:size(inputDataSegmented,2)
-    if(~flag(i))
+    tic
+    if(~flag(i)) 
         % ELMs(i)=trainELMLipridge(ELMs1,inputDataSegmented{i}{1},outputDataSegmented{i}{1});
          ELMs(i)=trainELM(ELMs1,inputDataSegmented{i}{1},outputDataSegmented{i}{1}); 
     else
         ELMs(i)=tempELMs(i);
     end
+    switchtrainingtime(i)=toc;
 end
+    assignin('base', 'SwitchTrainingTime', switchtrainingtime);
+obj.intervals=[];
+obj.intervals=segmentIndex;
+partitions = obj;
 obj.intervals=[];
 obj.intervals=segmentIndex;
 partitions = obj;
